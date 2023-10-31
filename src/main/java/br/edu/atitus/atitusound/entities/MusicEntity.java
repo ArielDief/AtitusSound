@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 public class MusicEntity extends GenericEntity{
 	
 	private Duration duration;
-	@ManyToOne(fetch = FetchType.EAGER, optional = false)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "artist_uuid")
 	private ArtistEntity artist;
 	private int like_count;
